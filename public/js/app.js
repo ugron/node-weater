@@ -1,5 +1,5 @@
 
-    console.log('Client side Javascript');
+     console.log('Client side Javascript');
 
     // fetch API
     // fetch('http://puzzle.mead.io/puzzle').then( (res) => {  // get random text
