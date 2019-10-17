@@ -115,7 +115,7 @@
                     rain,
                     timezone,
                     forecast: dailySummary,
-                    customText: `${currntSummary} now`
+                    customText: `Howdy!? ${currntSummary} now`
                 });
 
             });

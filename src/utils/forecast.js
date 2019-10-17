@@ -48,6 +48,7 @@
                     callback('cant find data. try another location', undefined); // (error = "cant find data...", data = undefined) 
                 }
                 else {
+                    // console.log(body.currently); // obj
                     callback(undefined, { //  (error = undefined, data = { }) 
                         temp: body.currently.apparentTemperature,
                         rain: body.currently.precipProbability,
