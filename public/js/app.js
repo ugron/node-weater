@@ -55,7 +55,9 @@
             message2.textContent = '';
 
             // input(searchTxt) に入力した値（テキスト）を fetch API weather に代入
-            fetch(`http://localhost:3000/weather?address=${location}`).then( (res) => {
+            // fetch(`http://localhost:3000/weather?address=${location}`).then( (res) => {
+            // => 
+            fetch(`/weather?address=${location}`).then( (res) => { // heroku deploy
             
                 res.json().then ( (dataJson) => {
                     if (dataJson.err) { // request( { url: locationURL, json: true}, (err, { body }) => { の err がある場合

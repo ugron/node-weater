@@ -25,6 +25,8 @@
     // console.log(path.join(__dirname, '../public') ); // /Users/mbp/Desktop/complete Node-js/web-server/public
 
     const app = express();
+    // setup for heroku
+    const port = process.env.PORT || 3000;
 
 // Paths for Express config
     const publicPath = path.join(__dirname, '../public');
@@ -167,10 +169,14 @@
 
 
 
-    // server start up
-    app.listen(3000, () => { // = port 3000
-        console.log('Sever is up on port 3000.');
+    // server start up on Local
+    // app.listen(3000, () => { // = port 3000
+    //     console.log('Sever is up on port 3000.');
+    // });
+
+
+    // Heroku server start up
+    app.listen(port, () => { // = port 3000
+        console.log(`Sever is up on port ${port}.`);
     });
-
-
 
