@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/web-server/public/img/weather.png">
+    </head>
+    <body>
+
+        <div class="main-content">
+            {{!-- hbs.registerPartials() --}}
+            {{>header}} 
+
+
+
+            {{!-- <h1>{{title}}</h1> --}}
+            <img id="pic" src="./img/148524-1.jpg" alt="medaka">
+            <p>{{name}} </p>
+
+        </div>
+        
+
+        {{!-- hbs.registerPartials() --}}
+            {{>footer}} 
+    </body>
+    </html>
