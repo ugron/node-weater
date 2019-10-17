@@ -100,7 +100,7 @@
                 return res.send({ err }); // `couldnt connect the url. maybe off line!`
             }
 
-            forecast(latitude, longitude, (err, {temp, rain, timezone, dailySummary }) => {
+            forecast(latitude, longitude, (err, {temp, rain, timezone, dailySummary, currntSummary }) => {
                 // url に接続不可(オフライン？),  400エラー URLのエラー
                 if (err) {
                     return res.send({ err });
@@ -114,7 +114,8 @@
                     temp,
                     rain,
                     timezone,
-                    forecast: dailySummary
+                    forecast: dailySummary,
+                    customText: `${currntSummary} now`
                 });
 
             });
@@ -122,7 +123,6 @@
         });
 
     });
-
 
   
 // request query string  

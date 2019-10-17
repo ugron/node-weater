@@ -70,7 +70,8 @@
                         // console.log(dataJson.forecast);
 
                         message1.textContent = dataJson.location;
-                        message2.textContent = dataJson.forecast;
+                        // message2.textContent = dataJson.forecast;
+                        message2.textContent = dataJson.customText;
                     }   
                 });
 

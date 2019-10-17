@@ -52,7 +52,8 @@
                         temp: body.currently.apparentTemperature,
                         rain: body.currently.precipProbability,
                         timezone: body.timezone,
-                        dailySummary: body.daily.summary
+                        dailySummary: body.daily.summary,
+                        currntSummary: body.currently.summary
                     });
                 } 
             });
